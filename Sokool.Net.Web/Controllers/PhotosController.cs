@@ -25,6 +25,7 @@ namespace Sokool.Net.Web.Controllers
 		    switch (id)
 		    {
 			    case 0:
+				    folder += "default/";
 				    break;
 			    case 1:
 				    folder += "cameras/";
