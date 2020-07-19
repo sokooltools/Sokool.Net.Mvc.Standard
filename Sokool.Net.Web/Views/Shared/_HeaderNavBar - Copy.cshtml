@@ -1,0 +1,32 @@
+﻿<nav class="container-fluid navbar navbar-expand-sm bg-dark navbar-dark fixed-top" style="padding-left: 15px;">
+	<ul id="navtab" class="navbar-nav">
+		<li class="nav-item">
+			<a class="nav-link" id="m0" href='@Url.Action("Index", "Home")'><i class="fa fa-fw fa-home"></i>Home</a>
+		</li>
+		<li class="nav-item">
+			<a class="nav-link" id="m1" href='@Url.Action("About", "Home")'><i class="fa fa-fw fa-search"></i>About</a>
+		</li>
+		<li class="nav-item">
+			<a class="nav-link" id="m2" href='@Url.Action("Contact", "Home")'><i class="fa fa-fw fa-envelope"></i>Contact</a>
+		</li>
+		<li class="nav-item">
+			<a class="nav-link" id="m3" href='@Url.Action("Photos1", "Photo", new { id = 0 })'><i class="fa fa-fw fa-user"></i>Photos1</a>
+		</li>
+		<li class="nav-item">
+			<a class="nav-link" id="m4" href='@Url.Action("Photos2", "Photo", new { id = 0 })'><i class="fa fa-fw fa-user"></i>Photos2</a>
+		</li>
+		<li class="nav-item">
+			<a class="nav-link" id="m5" href='@Url.Action("Index", "Video", new { vf = "across" })'><i class="fa fa-fw fa-video-camera"></i>Videos</a>
+		</li>
+		<li class="nav-item">
+			<a class="nav-link" id="m6" href='@Url.Action("Samples1", "Samples")'><i class="fa fa-fw fa-html5"></i>Samples1</a>
+		</li>
+		@*<li class="nav-item" style="display: none;">
+			<a class="nav-link" id="m7" href='@Url.Action("Samples2", "Samples")'><i class="fa fa-fw fa-html5"></i>Samples2</a>
+		</li>*@
+		<li class="nav-item">
+				<a class="nav-link" id="m8" style="color: white;" href='@Url.Action("Signup", "Home")'><i class="fa fa-fw fa-drivers-license-o mr-md-1 "></i>Sign&nbsp;up</a>
+		</li>
+	</ul>
+</nav>
+

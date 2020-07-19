@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30011.22
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sokool.Net.Web", "Sokool.Net.Web\Sokool.Net.Web.csproj", "{889FDD9A-C715-49F6-BDA5-28A8227240AB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sokool.Net.DataLibrary", "Sokool.Net.DataLibrary\Sokool.Net.DataLibrary.csproj", "{DF17D976-268B-474B-A4D9-E70C397F65A1}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{889FDD9A-C715-49F6-BDA5-28A8227240AB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{889FDD9A-C715-49F6-BDA5-28A8227240AB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{889FDD9A-C715-49F6-BDA5-28A8227240AB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{889FDD9A-C715-49F6-BDA5-28A8227240AB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DF17D976-268B-474B-A4D9-E70C397F65A1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DF17D976-268B-474B-A4D9-E70C397F65A1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DF17D976-268B-474B-A4D9-E70C397F65A1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DF17D976-268B-474B-A4D9-E70C397F65A1}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {2FDB77AE-3933-4856-9560-3B3BDCF05A44}
+	EndGlobalSection
+EndGlobal

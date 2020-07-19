@@ -1,0 +1,40 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+	<title>Sokool.Net - @ViewBag.Title</title>
+
+	<link rel="icon" href="@Url.Content("~/favicon.ico")" />
+
+	@Styles.Render("~/content/css/bootstrap")
+	@Styles.Render("~/content/css/fontawesome")
+	@Styles.Render("~/content/css/site")
+
+	@Scripts.Render("~/content/scripts/modernizr")
+
+	@*@Html.AntiForgeryToken()*@
+
+</head>
+<body>
+	@RenderSection("Styles", required: false)
+
+	@{ Html.RenderPartial("_HeaderNavBar"); }
+
+	<div class="container body-content">
+		@RenderBody()
+	</div>
+
+	<footer class="footer text-center">
+			&copy; Copyright @DateTime.Now.Year : <a href="http://sokool.net/"> Sokool.Net</a> | Built with a labor of ❤️ and Microsoft ASP.Net MVC
+	</footer>
+
+	@*@RenderPage("~/Views/Shared/_StaticPromotionalPage.cshtml")*@
+
+	@Scripts.Render("~/bundles/jquery")
+	@Scripts.Render("~/content/scripts/bootstrap")
+	@Scripts.Render("~/content/scripts/_site")
+
+	@RenderSection("Scripts", required: false)
+</body>
+</html>

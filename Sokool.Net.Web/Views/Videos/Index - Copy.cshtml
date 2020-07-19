@@ -1,0 +1,42 @@
+﻿@using Sokool.Net.DataLibrary.Data
+@model IEnumerable<Video>
+@{
+	ViewBag.Title = "Video Gallery";
+}
+
+@section Styles {
+	<link rel="stylesheet" href="~/Content/css/videos.css" />
+}
+@{
+	Html.RenderPartial("_HeaderTabBar");   
+}
+<div class="container">
+	<div class="m-3">
+		<div class="row">
+			<div class="col-xl-6 col-lg-6 col-md-9 col-sm-5 ">
+				Name
+			</div>
+			<div class="col-xl-3 col-lg-2 col-sm-auto text-right">
+				Length
+			</div>
+		</div>
+		@foreach (Video video in Model)
+		{
+			<div class="row">
+				<div class="col-xl-6 col-lg-6 col-md-9 col-sm-5">
+					@*<a class="video-link" href='@Uri.EscapeDataString(video.Name + video.Extension)'><i class="fa fa-fw fa-video-camera pr-1"></i>@video.Name</a>*@
+					<a class="video-link" href='@Url.Action( "Show", "Video", new { vf = video.VirtualFolder, fn = video.FileName, ft = video.FileType})'><i class="fa fa-fw fa-video-camera pr-1"></i>@video.FileName</a>
+				</div>
+				<div class="col-xl-3 col-lg-2 col-sm-auto text-right">
+					<span class="video-link">
+						@($"{video.Length/1024:###,### KB}")
+					</span>
+				</div>
+			</div>
+		}
+	</div>
+</div>
+
+@section Scripts {
+	<script src="~/content/scripts/_videos.js"></script>
+}
