@@ -18,12 +18,12 @@
 <link rel="stylesheet" href="~/Content/css/samples.css" />
 
 <div class="container ">
-	
+	<p>This page is used to test out functionalities used throughout this website.</p>
 	<div class="table">
 		<div class="row">
 			<div class="col-12 card pt-1" style="width: 20rem;">
 				<div class="card-body pt-1">
-					<h6 class="card-title">Click any of these links to open an html file which tests a particular functionality:</h6>
+					<h6 class="card-title">Click any of these links to open an html file using the corresponding functionality:</h6>
 					@foreach (Sample sample in Model)
 					{
 						<div class="photo-div">
@@ -32,10 +32,9 @@
 					}
 				</div>
 			</div>
-
 			<div class="col-12 card pt-1 mt-3" style="width: 20rem;">
 				<div class="card-body pt-1">
-					<h6 class="card-title">Click any of these buttons to generate the corresponding error:</h6>
+					<h6 class="card-title">Click any of these buttons to generate a custom view corresponding to the error:</h6>
 					<div class="error-div">
 						<a class="nav-link alert-danger" href="@ACTION_BADREQUEST"><i class="fa fa-fw fa-exclamation-circle"></i>400 - BadRequest</a>
 					</div>

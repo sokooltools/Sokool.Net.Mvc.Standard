@@ -291,7 +291,6 @@
     <Content Include="Content\scripts\README.md" />
     <Content Include="Content\scripts\_photos1.js" />
     <Content Include="Content\scripts\_samples.js" />
-    <Content Include="Content\scripts\_site - Copy.js" />
     <Content Include="Content\scripts\_site.js" />
     <Content Include="Content\scripts\_video.js" />
     <Content Include="Content\scripts\_videos.js" />

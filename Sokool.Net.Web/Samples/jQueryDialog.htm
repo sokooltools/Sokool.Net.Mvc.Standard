@@ -42,8 +42,8 @@
 			</div>
 		</div>
 		<script type="text/javascript" src="../content/scripts/jquery-3.5.1.js"></script>
-		<script type="text/javascript" src="../content/scripts/jquery-ui.js"></script>
 		<script type="text/javascript" src="../content/scripts/bootstrap.bundle.js"></script>
+		<script type="text/javascript" src="../content/scripts/jquery-ui.min.js"></script>
 		<script type="text/javascript" src="../content/scripts/_samples.js"></script>
 		<script type="text/javascript">
 			$(function () {
@@ -66,7 +66,7 @@
 						const ipAddress = "192.168.10.50";
 						const urlRoot = `http://${ipAddress}`;
 						const msg = `Could not reconnect to IP Address: <b>${ipAddress}</b></br></br>After closing this dialog,
-												try typing the following directly into</br>this browser's address bar: <b>${urlRoot}</b> ...`;
+																try typing the following directly into</br>this browser's address bar: <b>${urlRoot}</b> ...`;
 						jQuery(this).html(msg);
 					},
 					buttons: {
