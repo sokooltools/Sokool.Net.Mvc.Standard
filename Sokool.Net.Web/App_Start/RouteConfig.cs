@@ -17,6 +17,13 @@ namespace Sokool.Net.Web
 			);
 
 			routes.MapRoute(
+				name: "Photos",
+				url: "Photos/{action}/{id}",
+				defaults: new { controller = "Photos", action = "Photos1", id = UrlParameter.Optional },
+				constraints: new { id = @"\d+" }
+			);
+
+			routes.MapRoute(
 				name: "HelloWorld",
 				url: "HelloWorld/{action}/{name}/{id}",
 				defaults: new { controller = "HelloWorld", action = "Index", id = UrlParameter.Optional },

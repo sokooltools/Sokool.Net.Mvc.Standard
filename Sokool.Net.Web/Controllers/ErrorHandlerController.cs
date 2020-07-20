@@ -45,11 +45,13 @@ namespace Sokool.Net.Web.Controllers
 		private readonly Dictionary<int, Lkp> _lookup = new Dictionary<int, Lkp>()
 		{
 			{400, new Lkp("BadRequest", "A bad request was made")},
-			{401, new Lkp("Authentication", "The request requires user authentication")},
-			{403, new Lkp("Forbidden", "Access to the requested resource is forbidden")},
-			{404, new Lkp("Not Found", "The resource you requested may have been removed, had its name changed, or is temporarily unavailable.")},
+			{401, new Lkp("Unauthorized", "Access is denied due to invalid credentials")},
+			{403, new Lkp("Forbidden: Access is denied", "Access to the requested resource is forbidden")},
+			{404, new Lkp("File or directory not found", "The resource you requested may have been removed, had its name changed, or is temporarily unavailable.")},
+			{405, new Lkp("HTTP verb used to access this page not allowed", "The page you are looking for cannot be displayed because an invalid method (HTTP verb) was used to attempt access.")},
+			{406, new Lkp("Client browser does not accept the MIME type of the requested page", "The page you are looking for cannot be opened by your browser because it has a file name extension that your browser does not accept.")},
 			{408, new Lkp("RequestTimeout", "The request timed out")},
-			{500, new Lkp("Internal", "An internal error occurred while processing your request")},
+			{500, new Lkp("Internal server error", "There is a problem with the resource you are looking for, and it cannot be displayed")},
 			{503, new Lkp("Service Unavailable", "The server cannot handle the request (because it is overloaded or down for maintenance)")}
 		};
 	}
