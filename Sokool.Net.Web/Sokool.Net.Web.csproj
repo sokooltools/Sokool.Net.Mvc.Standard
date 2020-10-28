@@ -841,7 +841,6 @@
   <ItemGroup>
     <Folder Include="Data\" />
     <Folder Include="Views\Document\" />
-    <Folder Include="Views\HelloWorld\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
