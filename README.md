@@ -6,7 +6,7 @@ This "responsive" web site serves as a home to SokoolTools and is used primarily
 
 The site has been finely crafted using the following resources: Microsoft ASP.NET MVC Standard 5, Razor, HTML5, CSS3, BootStrap, Popper, Font-Awesome, jQuery, jQuery-UI, and more...
 
-The data displayed in both the <b>Photos1</b> view and <b>Photos2</b> view,	as well as the <b>Videos</b> view is generated 'dynamically' by the ASP.Net server by reading all assets placed into the designated web folders using high speed parallel processing.
+The data displayed in both the <b>Photos1</b> view and <b>Photos2</b> view,	as well as the <b>Videos</b> view is generated '<i>dynamically</i>' by the ASP.Net server by reading all assets placed into the designated web folders using high speed parallel processing.
 
 The <b>Photos2</b> view provides a user friendly interface using a Bootstrap photo carousel/slide show.
 
