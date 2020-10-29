@@ -9,6 +9,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sokool.Net.DataLibrary", "S
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{45A1EC4D-1A79-4B14-90E5-DC08055AD09E}"
 	ProjectSection(SolutionItems) = preProject
+		DeveloperNotes.txt = DeveloperNotes.txt
 		README.md = README.md
 	EndProjectSection
 EndProject
