@@ -60,7 +60,7 @@ function OpenDialog() {
 };
 
 function GoBack() {
-    const path = $("#videotab a.active").attr("href");
+    const path = $("#videotab a.active").attr("href") || "/Videos/Index/Across";
     setTimeout(function () { document.location.href = path; }, 250);
 }
 

@@ -1,7 +1,14 @@
-﻿$(document).ready(function () {
+﻿// Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification
+// for details on configuring this project to bundle and minify static web assets.
+$(document).ready(function () {
     $(`#navtab .nav-link`).on("click", function (e) {
         sessionStorage.setItem("navtab", $(e.target).attr("id"));
     });
+
+    const firstInput = $("form").find("input[type=text],input[type=email],input[type=password],select").filter(':input:visible:enabled:not([readonly]):first');
+    if (firstInput != null) {
+        firstInput.focus();
+    }
 
     (function () {
         var current = getInitPath(window.location.pathname.toLowerCase());
@@ -17,10 +24,12 @@
         });
 
         function getInitPath(path) {
+            if (path === "#")
+                return path;
             // Special handling for "videos/show/xxxx"
-            const idx = path.indexOf("/videos"); 
-            if (idx > -1)
-               return "/videos/index";
+            //const idx = path.indexOf("/videos"); 
+            //if (idx > -1)
+            //   return "/videos/index";
             const arr = path.split("/");
             if (arr.length > 2)
                 return `/${arr[1]}/${arr[2]}`;
