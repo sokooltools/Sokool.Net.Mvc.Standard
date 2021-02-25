@@ -1,0 +1,2 @@
+Enter this into the Package Manager Console window to get version of nuget:
+PM>		nuget help | select -First 1
